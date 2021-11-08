@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bun Bun Bake House</title>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onload="populateCart()">
+        <div class="header"> <!-- one large div to hold all the other divs within it -->
+            <div class="container">
+                <div class="navbar"> <!--Contains all the header navigation elements-->
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="Images/Logo.png" alt="BUNBUN BAKE HOUSE">
+                        </a>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="Products.html">Our Buns</a></li>
+                            <li><a href="About.html">About</a></li>
+                            <li><a href="Contact.html">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                    <div class="sign-in">
+                        <a href="account.html" class="btn">Sign In</a>
+                    </div>
+                    <div class="bag">
+                        <a href="cart.html">
+                            <img src="Images/Bag.png" alt="Bag">
+                            <div class="cart-counter">
+                                <h1 id="cart-counter-text">0</h1>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="small-container cart-page">
+                    <!-- Cart details -->
+                    <div class="heading">
+                        <h1>Your Cart</h1>
+                        <hr class="solid">
+                    </div>
+                    <table class="cart-items">
+                        <tr>
+                            <h1 id="empty-cart-text">Your cart is empty!</h1>
+                        </tr>
+                    </table>
+                    <div class="submit">
+                        <div class="col-submit">
+                            <div class="total">
+                                <div class="total-text">
+                                    <h2>Total:</h2>
+                                </div>
+                                <h1>$</h1>
+                                <div class="total-price-cart" id="price-calc"><h1>0.00</h1></div>
+                                <h1 id="taxes">Taxes and shipping calculated at checkout </h1>
+                            </div>
+                            <div class="checkout">
+                                <a href="index.html" class="btn">CHECKOUT</a>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+            <div class="reccommendation">
+                <div id="slider-left">
+                    <div id="reco">
+                        <h1>You might also <br> like these ></h1>
+                    </div>
+                </div>
+                <div id="slider">
+                    <ul id="slideWrap"> 
+                        <a href="Product-details-blackberry.html">
+                            <li><img src="Images/blackberry.jpg" alt="blackberry"></li>
+                        </a>
+                        <a href="Product-details-gluten.html">
+                            <li><img src="Images/gluten.jpg" alt="gluten"></li>
+                        </a>
+                        <a href="Product-details-caramel.html">
+                            <li><img src="Images/pecan.jpg" alt="pecan"></li>
+                        </a>
+                        <a href="Product-details-pumpkin.html">
+                            <li><img src="Images/pumpkin.jpg" alt="pumpkin"></li>
+                        </a>
+                        <a href="Product-details-walnut.html">
+                            <li><img src="Images/walnut.jpg" alt="walnut"></li>
+                        </a>
+                        <a href="Product-details-original.html">
+                            <li><img src="Images/original.jpg" alt="original"></li>
+                        </a>
+                      </ul>
+                    <a id="prev" onclick="prevSlide()">&#8810;</a>
+                    <a id="next" onClick="nextSlide()">&#8811;</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer"> <!--standard footer without any links-->
+            <div class="footer-info">
+                <p>BunBun Bake House, 2021 ©</p>
+            </div>
+        </div>
+        <script src="cartLoad.js" async></script>
+        <script src="main.js" async></script>
+    </body>
+</html>

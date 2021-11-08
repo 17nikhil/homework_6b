@@ -1,0 +1,749 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Home Page. header and footer */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: black;
+    font-family: 'Amatic SC', sans-serif;
+}
+
+.back {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.logo img {
+    width: 125px; 
+    height: 100px;
+}
+
+.bag {
+    
+    align-items: center;
+    width: 30px; 
+    height: 35px;
+    position: relative;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    padding-right: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.753);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+p {
+    color: #555;
+}
+
+.container {
+    max-width: 100%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 40px 40px 40px;
+}
+
+.second-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 40px 40px 40px;
+}
+
+.second-row h2 {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0px 40px 40px 40px;
+}
+
+.col-3 {
+    flex-basis: 60%;
+    min-width: 500px;
+}
+
+
+.col-3 img {
+    width: 100%; 
+    border-radius: 5px;
+}
+
+.col-2 {
+    flex-basis: 60%;
+    min-width: 500px;
+}
+
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col-1 {
+    flex-basis: 40%;
+    min-width: 300px;
+    padding-left: 10px;
+    font-family: 'Amatic SC', sans-serif;
+}
+
+.col-1 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    font-weight: bold;
+    font-size: 80px;
+}
+
+.col-1 p {
+    font-size: 20px;
+    margin: 25px 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(105, 105, 105);
+}
+
+.sign-in {
+    padding-left: 10px;
+    padding-right: 40px;
+}
+
+.btn {
+    display: inline-block;
+    background: #D3951B;
+    color: black;
+    padding: 10px 30px;
+    margin: 30px 0;
+    border-radius: 99px;
+    transition: background 0.5s; /* adding a little delay effect to the change on hover */
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.btn:hover {
+    background: black;
+    color: #D3951B;
+}
+
+.add-cart {
+    display: inline-block;
+    background: #D3951B;
+    color: black;
+    padding: 10px 30px;
+    margin: 30px 0;
+    border-radius: 99px;
+    transition: background 0.5s; /* adding a little delay effect to the change on hover */
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.add-cart:hover {
+    background: black;
+    color: #D3951B;
+}
+
+.footer {
+    background-color: black;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.footer-info {
+    text-align: center;
+}
+
+.footer-info p {
+    font-family: 'Amatic SC', sans-serif;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.753);
+}
+
+/* Product and Product detail Page */
+
+.col-4 {
+    flex-basis: 30%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.3s; /*Making the hover animation smooth*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.col-4 img {
+    width: 100%;
+    height: 350px;
+
+}
+
+.col-4:hover {
+    transform: translateY(-3px); /*Added a small animation on hover*/
+}
+
+.title {
+    padding-left: 20px;
+}
+
+.title h4 {
+    padding-top: 25px;
+    color: white;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 50px;
+}
+
+
+h4 {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    padding-left: 5px;
+}
+h5 {
+    color: #D3951B;
+    font-family: 'Amatic SC', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    padding-left: 5px;
+}
+
+.price-row {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.price-row h5 {
+    font-family: 'Amatic SC', sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.price-row p {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Amatic SC', sans-serif;
+}
+
+.col-3 {
+    flex-basis: 40%;
+    min-width: 300px;
+    padding-left: 10px;
+    font-family: 'Amatic SC', sans-serif;
+}
+
+.col-name {
+    padding-bottom: 10px;
+    display: flex;
+    align-items:center;
+    flex-wrap: wrap;
+    background-color: black;
+    border-top-right-radius: 100px;
+}
+
+.nutrition {
+    padding-top: 10px;
+}
+
+#nutrition-header {
+    background-color: black;
+    border-top-right-radius: 100px;
+    color:white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+.col-nutrition-1 {
+    display: flex;
+    align-items:flex-start;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 20px;
+}
+
+.col-nutrition-1 p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.col-nutrition-1 h3 {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 30px;
+    color: #D3951B;
+}
+
+.cals {
+    flex: 1;
+}
+
+.protein {
+    padding-right: 40px;
+}
+
+.carbs {
+    flex: 1;
+}
+
+.fat {
+    padding-right: 70px;;
+}
+
+.nutrition-info {
+    background-color: #EFEFEF;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.card {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.glaze {
+    padding-top: 40px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.glaze-image {
+    padding-top: 40px;
+    padding-right: 40px;
+}
+
+.quantity {
+    padding-top: 40px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quantity-image {
+    padding-top: 40px;
+    padding-right: 40px;
+}
+
+.glaze label {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.radio {
+    padding-top: 10px;
+}
+
+.quantity label{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+input {
+    margin: .4rem;
+}
+
+.submit {
+    padding-top: 50px;
+}
+
+.col-submit {
+    padding-left: 20px;;
+    display: flex;
+    align-items:center;
+    flex-wrap: wrap;
+    justify-content: left;
+    border-top: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.total {
+    flex:1;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 25px;
+}
+
+.total-text {
+    flex: 0.1;
+}
+
+.total-price {
+    
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 20px;
+}
+
+.add-to-cart {
+    padding-right: 30px;
+}
+
+  
+/* About Page */
+
+.owners {
+    display: flex;
+    justify-content: center;
+}
+
+ .owners img {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 50%;
+}
+
+.names {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.names h2 {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 40px;
+}
+
+.about-info {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.about-info p {
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+/* Cart design */
+
+.checkout {
+    padding-right: 30px;
+}
+
+#empty-cart-text {
+    flex: 1;
+    align-items: center;
+    align-content: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 80px;
+    color: #555;
+}
+
+#cart-counter-text{
+    font-size: 30px;
+    font-weight: 900;
+    border-radius: 60%;
+    height: 30px;
+    width: 30px;
+    align-content: center;
+    align-items: center;
+    margin: 2px 2px 8px 2px;
+}
+
+.cart-counter{
+    background: red;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 100px;
+    height: 30px;
+    width:30px;
+    position: absolute;
+    bottom:-15px;
+    right:-15px;
+}
+
+.small-container {
+    padding: 40px;
+}
+
+.heading {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 30px;
+}
+
+hr.solid {
+    border-top: 10px solid #D3951B;
+    width: 12%;
+  }
+
+.cart-page {
+    margin: 10px auto;
+}
+
+.first-column {
+    align-items: center;
+}
+
+.cart-page tr{
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 20px;
+}
+
+#cart-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    padding-left: 5px;
+}
+
+#item {
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.cart-info {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.info {
+    padding-left: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#quantity{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#total{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.total-price-cart {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#taxes{
+    padding-left: 30px;
+    font-size: 20px;
+    font-weight: normal;
+    color: grey;
+}
+
+.reccommendation{
+    padding: 20px 200px 40px 200px;
+    align-items: center;
+    align-content: center;
+}
+
+.reccommendation h1 {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 80px;
+    padding-bottom: 10px;
+}
+
+#reco {
+    justify-content: center;
+    align-items: center;
+}
+
+#slider {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#slider-left{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    display: inline-block;
+    text-align: left;
+    align-items: center;
+    padding-top: 75px;
+    margin-right: 100px;
+}
+
+#slider #prev, #slider #next {
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    border-radius: 50%;
+    font-size: 2rem;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    transform: translateY(-50%);
+    transition: all 150ms ease;
+}
+
+#slider #prev {
+    left: 10px;
+  }
+  #slider #next {
+    right: 10px;
+  }
+  
+  #slider #prev:hover, #slider #next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 0;
+  }
+
+#slider ul {
+    position: relative;
+    list-style: none;
+    height: 100%;
+    width: 10000%;
+    padding: 0;
+    margin: 0;
+    transition: all 750ms ease;
+    left: 0;
+  }
+  #slider ul li {
+    position: relative;
+    height: 100%;
+  
+    float: left;
+  }
+
+  #slider ul li img {
+    width: 350px;
+    height: 350px;
+  }
+
+/*Account page*/
+
+.account-page {
+    padding: 50px 0;
+}
+
+.form-container{
+    flex-wrap: wrap;
+    background: white;
+    width: 800px;
+    height: 450px;
+    position: relative;
+    text-align: center;
+    padding: 20px 20px 100px 20px;
+    margin: auto;
+    align-items: center;
+    align-content: center;
+}
+
+form {
+    align-content: center;
+}
+
+.form-container h1{
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 30px;
+}
+
+.form-container form {
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+}
+
+form input {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc; 
+    border-radius: 3px;   
+}
+
+.action {
+    flex-direction: row;
+}
+
+.pwd{
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 20px;
+    color: cornflowerblue;
+}
+
+.register{
+    align-content: center;
+    padding: 40px 20px 10px 20px;
+    margin: auto;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 20px;
+    border-top: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+#login-form{
+    align-content: center;
+    margin-left: 225px;
+}

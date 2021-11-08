@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bun Bun Bake House</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onload="onLoad()">
+        <div class="header"> <!-- one large div to hold all the other divs within it -->
+            <div class="container">
+                <div class="navbar"> <!--Contains all the header navigation elements-->
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="Images/Logo.png" alt="BUNBUN BAKE HOUSE">
+                        </a>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="Products.html">Our Buns</a></li>
+                            <li><a href="About.html">About</a></li>
+                            <li><a href="Contact.html">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                    <div class="sign-in">
+                        <a href="account.html" class="btn">Sign In</a>
+                    </div>
+                    <div class="bag">
+                        <a href="cart.html">
+                            <img src="Images/Bag.png" alt="Bag">
+                            <div class="cart-counter">
+                                <h1 id="cart-counter-text">0</h1>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row"> <!--div which has two columns-->
+                    <div class="col-1">
+                        <h2 style="color: #D3951B;">Phone Numbers</h2>
+                        <h1 style="font-size: 40px;"> +1 (412) 123 1234 </h1>
+                        <h1 style="font-size: 40px;">+1 (412) 321 4321</h1>
+                    </div>
+                    <div class="col-1">
+                        <h2 style="color: #D3951B;">Address</h2>
+                        <h1 style="font-size: 40px;"> 5728, Holden St </h1>
+                        <h1 style="font-size: 40px;">Pittsburgh, PA - 15232</h1>
+                        <h1 style="font-size: 40px;">United States</h1>
+                    </div>
+                </div>
+                <div class="second-row">
+                    <h2>Drop by and visit us!</h2>
+                </div>
+                <div class="map">
+                    <iframe
+                        width="1280"
+                        height="600"
+                        frameborder="0" style="border:0"
+                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDSToRbA4CcxCKbr9IQzXjCNHLlCRnXe1g&q=5728+holden+street+Pittsburgh" allowfullscreen>
+                        </iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer"> <!--standard footer without any links-->
+            <div class="footer-info">
+                <p>BunBun Bake House, 2021 ©</p>
+            </div>
+        </div>
+        <script src="load.js" async></script>
+    </body>
+</html>
